@@ -1,0 +1,110 @@
+body {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+.timer {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  border: 2px solid #e5e5e5;
+  background-color: rgba(71, 99, 255, 0.4);
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.timer__clock-value[data-value="hours"] {
+  display: none;
+}
+
+.timer__clock-value[data-value="days"] {
+  display: none;
+}
+
+.timer button {
+  width: 80px;
+  padding: 10px;
+  color: #ffffff;
+  border: 1px solid #e5e5e5;
+  background-color: transparent;
+  border-radius: 10px;
+  text-transform: uppercase;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.timer button:hover,
+.timer button:focus {
+  background-color: whitesmoke;
+  color: #000000;
+}
+
+.timer button:disabled {
+  cursor: not-allowed;
+  background-color: 0 0;
+  opacity: 0.6;
+}
+
+.timer button:disabled:hover {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.timer__clock-value-wrp {
+  font-size: 52px;
+}
+
+.timer__seconds-btns {
+  margin-bottom: 20px;
+}
+
+.timer-form {
+  display: flex;
+  justify-content: space-between;
+  max-width: 240px;
+  margin: 0 auto 20px;
+}
+
+.timer-form__input {
+  width: 80%;
+  background-color: transparent;
+  border: 1px solid #e5e5e5;
+
+  line-height: 1.6;
+  padding-left: 10px;
+  outline: none;
+  color: #ffffff;
+}
+
+.timer-form__input::placeholder {
+  color: #ffffff;
+}
+
+.timer .timer-form__btn {
+  width: 20%;
+
+  background-color: whitesmoke;
+  color: #000000;
+  border-radius: 0;
+  outline: none;
+  border: none;
+  border: 1px solid #e5e5e5;
+}
+
+.timer .timer-form__btn:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.timer .timer-form__btn:disabled:hover {
+  background-color: whitesmoke;
+  color: #000000;
+}
+
+.timer__control-btns {
+  margin-bottom: 10px;
+}
